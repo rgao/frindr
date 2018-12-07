@@ -171,10 +171,27 @@
             </select>
         </div>
 
-        <div class="text-center" id="match-container">
-            <hr>
-            <h3 id="match-header">Congratulations! You matched with <span id="name-container"></span>!</h3>
-            <div id="photo-container"></div>
+        <div class="modal" tabindex="-1" role="dialog" id="match-container">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="match-header">Congratulations! You matched with</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <h3 id="name-container"></h3>
+                        <img class="img-fluid" id="photo-container">
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <button type="button" class="btn btn-success mt-3" id="submit-btn">Submit</button>
@@ -206,7 +223,6 @@
                 console.log("Please make sure all fields are filled or answered.");
             }
 
-
             function submit() {
                 var submission = {
                     name: $("#name-input").val(),
@@ -231,12 +247,10 @@
                         console.log("Please make sure all fields are submitted correctly.");
                     };
                 }).done(function (posts) {
-                    $("#match-container").show();
-                    $("#submit-btn").hide();
+                    $("#photo-container").attr("src", posts[1]);
+                    $("#name-container").text(posts[0]);
 
-                    var matchPhoto = $("<img id='match-photo' src='"+ "https://upload.wikimedia.org/wikipedia/commons/d/d7/Squirrel_Eating_a_peanut.jpg" +"'>")
-                    $("#photo-container").append(matchPhoto);
-                    $("#name-container").append(posts[1]);
+                    $("#match-container").modal("toggle");
                 });
             };
         });
