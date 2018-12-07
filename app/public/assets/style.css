@@ -1,0 +1,42 @@
+#survey-btn {
+    font-size: 24px;
+}
+
+#warning {
+    color: red
+}
+
+.jumbotron, #heading {
+    position: relative;
+}
+
+.main-img {
+    width: 92px;
+    height: 92px;
+}
+
+#title {
+    position: absolute;
+    font-weight: bold;
+    font-size: 40px;
+    top: 20
+}
+
+#survey-heading {
+    position: absolute;
+    font-weight: bold;
+    font-size: 32px;
+    bottom: 0;
+}
+
+#match-header {
+    color: green;
+}
+
+#match-photo {
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    border: 5px solid goldenrod
+    ;
+}

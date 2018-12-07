@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>FriendFinder</title>
+
+    <link rel="icon" type="image/png" href="/assets/icon.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/style.css">
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container mb-5">
+        <div id="heading" class="mt-2">
+            <a href="home.html"><img class="main-img" src="./assets/icon.png"></a>
+            <span id="survey-heading" class="ml-3">Survey Questionnare</span>
+        </div>
+        <hr>
+        <h3>About You</h3>
+
+        <form class="my-4" id="form">
+            <label for="name-input" class="px-3">Name</label>
+            <input type="text" class="form-control mx-4 mb-3" id="name-input" required>
+
+            <label for="photo-input" class="px-3">Link to Photo</label>
+            <input type="text" class="form-control mx-4" id="photo-input">
+        </form>
+        <p id="warning">All fields are required.</p>
+        <hr>
+
+        <h4>Question 1</h4>
+        <div class="form-group col-md-4">
+            <label for="question1">I consider myself a hopeless romantic.</label>
+            <select id="question1" class="form-control">
+                <option selected>Select an Option:</option>
+                <option value=5>Definitely</option>
+                <option value=4>Sometimes, and/or only with the right person</option>
+                <option value=3>Unsure</option>
+                <option value=2>I'm not very outwardly romantic, even with the right person</option>
+                <option value=1>Nah</option>
+            </select>
+        </div>
+
+        <h4>Question 2</h4>
+        <div class="form-group col-md-4">
+            <label for="question2">I care a lot about understanding the underlying truths of reality/humanity.</label>
+            <select id="question2" class="form-control">
+                <option selected>Select an Option:</option>
+                <option value=5>Strongly Agree</option>
+                <option value=4>Agree</option>
+                <option value=3>Unsure / Sometimes </option>
+                <option value=2>Disagree</option>
+                <option value=1>Strongly Disagree</option>
+            </select>
+        </div>
+
+        <h4>Question 3</h4>
+        <div class="form-group col-md-4">
+            <label for="question3">I believe in masculine and/or feminine roles in a relationship.</label>
+            <select id="question3" class="form-control">
+                <option selected>Select an Option:</option>
+                <option value=5>Strongly Agree</option>
+                <option value=4>Agree</option>
+                <option value=3>Unsure / Sometimes </option>
+                <option value=2>Disagree</option>
+                <option value=1>Strongly Disagree</option>
+            </select>
+        </div>
+
+        <h4>Question 4</h4>
+        <div class="form-group col-md-4">
+            <label for="question4">I am strongly invested in politics and believe politics is important.</label>
+            <select id="question4" class="form-control">
+                <option selected>Select an Option:</option>
+                <option value=5>Strongly Agree</option>
+                <option value=4>Agree</option>
+                <option value=3>Unsure / Sometimes </option>
+                <option value=2>Disagree</option>
+                <option value=1>Strongly Disagree</option>
+            </select>
+        </div>
+
+        <h4>Question 5</h4>
+        <div class="form-group col-md-4">
+            <label for="question5">I am inclined to do what I believe is right, even if the decision is not most
+                profitable.</label>
+            <select id="question5" class="form-control">
+                <option selected>Select an Option:</option>
+                <option value=5>Strongly Agree</option>
+                <option value=4>Agree</option>
+                <option value=3>Unsure / Sometimes </option>
+                <option value=2>Disagree</option>
+                <option value=1>Strongly Disagree</option>
+            </select>
+        </div>
+
+
+        <h4>Question 6</h4>
+        <div class="form-group col-md-4">
+            <label for="question6">I try to be always frugal and money-efficient.</label>
+            <select id="question6" class="form-control">
+                <option selected>Select an Option:</option>
+                <option value=5>Strongly Agree</option>
+                <option value=4>Agree</option>
+                <option value=3>Unsure / Sometimes </option>
+                <option value=2>Disagree</option>
+                <option value=1>Strongly Disagree</option>
+            </select>
+        </div>
+
+        <h4>Question 7</h4>
+        <div class="form-group col-md-4">
+            <label for="question7">You should always give others the benefit of the doubt at first.</label>
+            <select id="question7" class="form-control">
+                <option selected>Select an Option:</option>
+                <option value=5>Strongly Agree</option>
+                <option value=4>Agree</option>
+                <option value=3>Unsure / Sometimes </option>
+                <option value=2>Disagree</option>
+                <option value=1>Strongly Disagree</option>
+            </select>
+        </div>
+
+
+        <h4>Question 8</h4>
+        <div class="form-group col-md-4">
+            <label for="question8">Dating and advancing a relationship should definitely be slow and steady.</label>
+            <select id="question8" class="form-control">
+                <option selected>Select an Option:</option>
+                <option value=5>Strongly Agree</option>
+                <option value=4>Agree</option>
+                <option value=3>Unsure / Sometimes </option>
+                <option value=2>Disagree</option>
+                <option value=1>Strongly Disagree</option>
+            </select>
+        </div>
+
+        <h4>Question 9</h4>
+        <div class="form-group col-md-4">
+            <label for="question9">Passion over profit and convenience.</label>
+            <select id="question9" class="form-control">
+                <option selected>Select an Option:</option>
+                <option value=5>Strongly Agree</option>
+                <option value=4>Agree</option>
+                <option value=3>Unsure / Sometimes </option>
+                <option value=2>Disagree</option>
+                <option value=1>Strongly Disagree</option>
+            </select>
+        </div>
+
+        <h4>Question 10</h4>
+        <div class="form-group col-md-4">
+            <label for="question10">Do you plan on having kids?</label>
+            <select id="question10" class="form-control">
+                <option selected>Select an Option:</option>
+                <option value=5>I LOVE kids and would love to have kids</option>
+                <option value=4>They're adorable, but I'm not completely certain yet</option>
+                <option value=3>Unsure</option>
+                <option value=2>Probably not, but may reconsider depending on my SO</option>
+                <option value=1>Kids are evil little critters</option>
+            </select>
+        </div>
+
+        <div class="text-center" id="match-container">
+            <hr>
+            <h3 id="match-header">Congratulations! You matched with <span id="name-container"></span>!</h3>
+            <div id="photo-container"></div>
+        </div>
+
+        <button type="button" class="btn btn-success mt-3" id="submit-btn">Submit</button>
+        <hr>
+
+        <a href="/api/friends">Friends API Data</a>
+    </div>
+
+    <footer class="footer fixed-bottom copyright text-center mt-5 pt-2">
+        Copyright &copy; 2018
+    </footer>
+
+    <script type="text/javascript">
+        $("#match-container").hide();
+
+        $(document).on("click", "#submit-btn", function () {
+            event.preventDefault();
+            var required = true;
+
+            $(".form-control").each(function () {
+                if ($(this).val() === "Select an Option:" || $(this).val() === "") {
+                    required = false;
+                };
+            });
+
+            if (required === true) {
+                submit();
+            } else {
+                console.log("Please make sure all fields are filled or answered.");
+            }
+
+
+            function submit() {
+                var submission = {
+                    name: $("#name-input").val(),
+                    photo: $("#photo-input").val(),
+                    answers: [parseInt($("#question1").val()),
+                    parseInt($("#question2").val()),
+                    parseInt($("#question3").val()),
+                    parseInt($("#question4").val()),
+                    parseInt($("#question5").val()),
+                    parseInt($("#question6").val()),
+                    parseInt($("#question7").val()),
+                    parseInt($("#question8").val()),
+                    parseInt($("#question9").val()),
+                    parseInt($("#question10").val())
+                    ]
+                };
+
+                $.post("/api/friends", submission, function (data) {
+                    if (data) {
+                        console.log("Submission successful!");
+                    } else {
+                        console.log("Please make sure all fields are submitted correctly.");
+                    };
+                }).done(function (posts) {
+                    $("#match-container").show();
+                    $("#submit-btn").hide();
+
+                    var matchPhoto = $("<img id='match-photo' src='"+ "https://upload.wikimedia.org/wikipedia/commons/d/d7/Squirrel_Eating_a_peanut.jpg" +"'>")
+                    $("#photo-container").append(matchPhoto);
+                    $("#name-container").append(posts[1]);
+                });
+            };
+        });
+    </script>
+
+</body>
+
+</html>
